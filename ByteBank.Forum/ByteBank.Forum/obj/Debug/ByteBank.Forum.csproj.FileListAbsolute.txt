@@ -92,3 +92,16 @@ C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\obj\Deb
 C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\obj\Debug\ByteBank.Forum.csproj.CopyComplete
 C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\obj\Debug\ByteBank.Forum.dll
 C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\obj\Debug\ByteBank.Forum.pdb
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Security.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Owin.dll
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.xml
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Security.xml
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Repositórios\Personal\asp.net-identity\ByteBank.Forum\ByteBank.Forum\bin\Microsoft.Owin.Security.OAuth.xml
