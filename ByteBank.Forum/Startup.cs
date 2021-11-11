@@ -10,6 +10,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using ByteBank.Forum.App_Start.Identity;
+using Microsoft.Owin.Security.Cookies;
 
 [assembly: OwinStartup(typeof(ByteBank.Forum.Startup))]
 
@@ -48,8 +49,36 @@ namespace ByteBank.Forum
                         RequireDigit = true
                     };
 
+                    userManager.EmailService = new EmailService();
+
+                    var dataProtectionProvider = options.DataProtectionProvider;
+                    var dataProtectionProviderCreated = dataProtectionProvider.Create("ByteBank.Forum");
+
+                    userManager.UserTokenProvider = new DataProtectorTokenProvider<UserApplication>(dataProtectionProviderCreated);
+
+                    userManager.MaxFailedAccessAttemptsBeforeLockout = 5;
+                    userManager.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                    userManager.UserLockoutEnabledByDefault = true;
+
                     return userManager;
                 });
+
+            builder.CreatePerOwinContext<SignInManager<UserApplication, string>>(
+                (options, contextOwin) =>
+                {
+                    var userManager = contextOwin.Get<UserManager<UserApplication>>();
+                    var signInManager =
+                        new SignInManager<UserApplication, string>(
+                            userManager,
+                            contextOwin.Authentication);
+
+                    return signInManager;
+                });
+
+            builder.UseCookieAuthentication(new CookieAuthenticationOptions
+            {
+                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie
+            });
         }
     }
 }
